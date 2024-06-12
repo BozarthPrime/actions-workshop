@@ -1,6 +1,6 @@
 name: Hello, World!
 description: Greet the world
-author: GitHub Actions
+author: Joseph Bozarth
 
 inputs:
   who-to-greet:
@@ -17,4 +17,4 @@ runs:
   using: docker
   image: Dockerfile
   env:
-    INPUT_WHO_TO_GREET: ${{ inputs.who-to-greet }}
+    - ${{ inputs.who-to-greet }}
