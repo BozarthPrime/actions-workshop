@@ -1,0 +1,17 @@
+name: CI Build for container action
+
+on:
+  workflow_dispatch:
+
+jobs:
+  container-run:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout files
+        uses: actions/checkout@4.0
+
+      - name: run my container
+        uses: ./hello-world-docker-action
+        with:
+          who-to-greet: world
