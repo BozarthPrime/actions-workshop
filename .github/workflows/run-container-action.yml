@@ -9,7 +9,7 @@ jobs:
 
     steps:
       - name: Checkout files
-        uses: actions/checkout@4.0
+        uses: actions/checkout@v4
 
       - name: run my container
         uses: ./hello-world-docker-action
